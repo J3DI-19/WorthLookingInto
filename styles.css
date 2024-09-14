@@ -1,0 +1,90 @@
+/* General Styles */
+html, body {
+  height: 100%; /* Full height for HTML and body elements */
+  margin: 0; /* Remove default margin */
+}
+
+body {
+  background-color: #121212; /* Dark background for the entire page */
+  color: #e0e0e0; /* Light text color for readability */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Default font */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+}
+
+video#background-video {
+  position: fixed; /* Fix the video in the background */
+  top: 0; /* Align video with the top */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure video covers the entire background */
+  z-index: 1; /* Set video behind other content */
+}
+
+header {
+  background-color: rgba(50, 50, 50, 0.7); /* Darker grey with 70% transparency */
+  color: #e0e0e0; /* Light text color */
+  padding: 1em 0;
+  text-align: center;
+  position: relative; /* Ensure header is positioned relative to the body */
+  z-index: 2; /* Ensure header is on top of the video */
+  margin-top: -30px; /* Move header up by 30 pixels */
+}
+
+nav ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 1em;
+}
+
+nav ul li a {
+  color: #e0e0e0; /* Light color for links */
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #bb86fc; /* Light purple color for link hover effect */
+}
+
+main {
+  background-color: transparent; /* Make main background transparent */
+  padding: 2em;
+  border-radius: 8px; /* Rounded corners for the main content area */
+  margin: 2em auto;
+  max-width: 900px; /* Center the content and limit the width */
+  flex: 1; /* Allow main to grow and fill space */
+  position: relative; /* Ensure main content is properly positioned */
+  z-index: 2; /* Ensure main content is on top of the video */
+}
+
+h1, h2 {
+  color: #ffffff; /* White color for headings */
+}
+
+@font-face {
+  font-family: 'Starlight';
+  src: url('fonts/Starlight.ttf') format('truetype');
+}
+
+h1#website-title {
+  font-family: 'Starlight', sans-serif; /* Use the Starlight font */
+  font-size: 3em; /* Larger font size for prominence */
+  font-weight: normal; /* Normal weight for digital font */
+  text-transform: uppercase; /* Uppercase for emphasis */
+  letter-spacing: 0.1em; /* Slightly increased letter spacing */
+}
+
+footer {
+  background-color: rgba(50, 50, 50, 0.7); /* Darker grey with 70% transparency */
+  color: #e0e0e0; /* Light text color */
+  padding: 1em 0;
+  text-align: center;
+  position: relative; /* Ensure footer is positioned correctly */
+  z-index: 2; /* Ensure footer is above the video */
+}
